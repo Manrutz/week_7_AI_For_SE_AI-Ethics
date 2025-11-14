@@ -1,0 +1,11 @@
+Audit Summary
+This analysis examines racial bias in the COMPAS recidivism risk assessment tool using the AIF360 fairness auditing framework. COMPAS has been widely criticized for producing higher false positive rates for African-American defendants, and my findings reaffirm these concerns. Using the COMPAS dataset provided by ProPublica, I trained a baseline logistic regression classifier and evaluated fairness and performance metrics across racial groups.
+
+Key Findings
+Overall model accuracy was reasonable; however, fairness metrics revealed significant disparities. The Statistical Parity Difference indicated that African-American defendants were more likely to be flagged as “high risk” compared to Caucasian defendants. The Disparate Impact ratio fell below the acceptable threshold of 0.8, suggesting unequal treatment between racial groups. Most critically, the False Positive Rate (FPR) was substantially higher for African-Americans, meaning the system incorrectly labeled them as high risk more frequently. The Equal Opportunity Difference also showed lowered true positive rates for the unprivileged group, further confirming unequal model performance.
+
+Mitigation
+I applied the Reweighing algorithm, a pre-processing fairness intervention that adjusts instance weights to balance representation between privileged and unprivileged groups. Post-mitigation results showed improvements: Statistical Parity moved closer to zero, Disparate Impact improved toward fairness, and Equal Opportunity differences were reduced. However, perfect fairness was not achieved, reflecting the inherent complexity of real-world recidivism datasets.
+
+Conclusion
+The COMPAS dataset exhibits measurable racial bias, and fairness interventions can meaningfully reduce—but not fully eliminate—disparities. Responsible deployment of such tools requires continuous auditing, transparent documentation, and human oversight. Automated risk scores should never be the sole basis for legal decisions, as they risk reinforcing historical inequalities without proper safeguards.

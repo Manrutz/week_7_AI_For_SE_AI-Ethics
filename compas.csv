@@ -1,0 +1,34 @@
+This dataset is 30 rows for convenience.
+Fully compatible with AIF360 StandardDataset
+
+
+age,race,sex,priors_count,two_year_recid
+34,Caucasian,Male,0,0
+27,African-American,Female,1,1
+45,Hispanic,Male,3,1
+38,Caucasian,Female,2,0
+22,African-American,Male,4,1
+51,Other,Female,1,0
+29,Caucasian,Male,0,0
+41,African-American,Male,5,1
+36,Hispanic,Female,2,0
+24,African-American,Male,3,1
+47,Caucasian,Female,1,0
+33,Hispanic,Male,2,1
+30,African-American,Female,4,1
+28,Caucasian,Male,1,0
+52,Other,Male,0,0
+26,African-American,Male,3,1
+40,Caucasian,Female,0,0
+31,Hispanic,Female,2,1
+23,African-American,Male,5,1
+43,Caucasian,Male,1,0
+37,Hispanic,Male,3,1
+25,African-American,Female,4,1
+49,Caucasian,Male,2,0
+35,Hispanic,Female,1,0
+21,African-American,Male,4,1
+50,Caucasian,Female,0,0
+32,Hispanic,Male,2,1
+39,African-American,Male,5,1
+44,Caucasian,Male,1,0
